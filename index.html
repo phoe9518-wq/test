@@ -131,23 +131,24 @@
     <section id="contacts" class="contacts">
         <div class="container contacts-content">
             <div class="contacts-about">
-                <h2>About me</h2>
+             <h2>About me</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni earum quidem nobis enim temporibus sapiente ducimus. Officia, expedita ab.</p>
             </div>
             <div class="contacts-form">
-                <form id="contacts-form" name="form-contatti" data-netlify="true">
-                    <input type="hidden" name="form-name" value="form-contatti" />
-                    <label class="input-label" for="">Full Name</label>
+                <form name="contatti" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contatti" />
+
+                    <label class="input-label">Full Name</label>
                     <input class="input-field" type="text" name="name" placeholder="Name Surname" required>
 
-                    <label class="input-label" for="">E-mail</label>
+                    <label class="input-label">E-mail</label>
                     <input class="input-field" type="email" name="email" placeholder="example@email.com" required>
 
-                    <label class="input-label" for="">Subject</label>
+                    <label class="input-label">Subject</label>
                     <input class="input-field" type="text" name="subject" placeholder="Example Subject" required>
 
-                    <label class="input-label" for="">Message <span>(Optional)</span></label>
-                    <textarea class="input-textarea" name="message" id="" placeholder="Write here (max 200 characters)" maxlength="200"></textarea>
+                    <label class="input-label">Message <span>(Optional)</span></label>
+                    <textarea class="input-textarea" name="message" placeholder="Write here (max 200 characters)" maxlength="200"></textarea>
 
                     <button type="submit" class="button">Send</button>
                 </form>

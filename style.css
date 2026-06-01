@@ -73,7 +73,7 @@ a:hover {
     color: #beda10;
 }
 
-.p {
+p {
     font-size: 24px;
     margin-bottom: 16px;
 }
@@ -196,6 +196,19 @@ section {
     font-size: 24px;
 }
 
+.menu ul li a, .hero-cta, .logo {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover, .hero-cta:hover, .logo:hover {
+    color: #beda10;
+}
+
 /* contents */
 
 .works-menu {
@@ -307,7 +320,10 @@ section {
 }
 
 .anchors {
-   visibility: hidden;
+   display: block;
    position: relative;
    top: -150px;
+   visibility: hidden;
+   width: 0;
+   height: 0;
 }
