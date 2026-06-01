@@ -100,8 +100,7 @@ p {
     text-transform: uppercase; 
 }
 
-.input-field,
-.input-textarea {
+.input-field, .input-textarea {
     font-family: "Work Sans", sans-serif;
     font-size: 18px;
     color: #757575;
