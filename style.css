@@ -350,16 +350,16 @@ section {
 }
 
 .back-to-top {
-    background-image: url('images/arrow-up.png');
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    background-image: url('img/arrow-up.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
     background-color: #8279bb;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 36px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
 }
+
