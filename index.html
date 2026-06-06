@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header class="header">
@@ -39,9 +38,9 @@
     <section class="works-menu">
         <div class="container">
             <ul>
-                <li><a class="button" href="#work1">Through the glass</a></li>
-                <li><a class="button" href="#work2">Neon Lights</a></li>
-                <li><a class="button" href="#work3">Light Trails</a></li>
+                <li><a class="button-works" href="#work1">Through the glass</a></li>
+                <li><a class="button-works" href="#work2">Neon Lights</a></li>
+                <li><a class="button-works" href="#work3">Light Trails</a></li>
             </ul>
         </div>
     </section>
@@ -135,22 +134,17 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni earum quidem nobis enim temporibus sapiente ducimus. Officia, expedita ab.</p>
             </div>
             <div class="contacts-form">
-                <form name="contatti" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contatti" />
+                <form action="">
+                    <label class="input-label" for="name">Full Name</label>
+                    <input class="input-field" type="text" placeholder="Your name here">
 
-                    <label class="input-label">Full Name</label>
-                    <input class="input-field" type="text" name="name" placeholder="Name Surname" required>
+                    <label class="input-label" for="email">E-mail</label>
+                    <input class="input-field" type="email" placeholder="email@example.com">
 
-                    <label class="input-label">E-mail</label>
-                    <input class="input-field" type="email" name="email" placeholder="example@email.com" required>
+                    <label class="input-label" for="message">Message <span>(optional)</span></label>
+                    <textarea class="input-field" name="message" id="message" placeholder="Your message here"></textarea>
 
-                    <label class="input-label">Subject</label>
-                    <input class="input-field" type="text" name="subject" placeholder="Example Subject" required>
-
-                    <label class="input-label">Message <span>(Optional)</span></label>
-                    <textarea class="input-textarea" name="message" placeholder="Write here (max 200 characters)" maxlength="200"></textarea>
-
-                    <button type="submit" class="button">Send</button>
+                    <button class="button">Send Message</button>
                 </form>
             </div>
         </div>

@@ -59,8 +59,16 @@ h3 {
     }
 }
 
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-right: 64px;
+}
+
 a {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 42px;
     color: #ffffff;
@@ -78,7 +86,7 @@ p {
     margin-bottom: 16px;
 }
 
-.button {
+.button-works {
     background-color: #8279bb;
     color: #ffffff;
     font-size: 18px;
@@ -86,10 +94,26 @@ p {
     text-transform: uppercase;
     padding: 12px 24px;
     border: none;
-    border-radius: 37px;
+    border-radius: 36px;
 }
 
-.button:hover {
+.button-works:hover {
+    background-color: #beda10;
+    color: #070514;
+}
+
+button {
+    background-color: #8279bb;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 36px;
+}
+
+button:hover {
     background-color: #beda10;
     color: #070514;
 }
@@ -113,7 +137,11 @@ p {
     margin-bottom: 16px;
 }
 
-span {
+.input-textarea {
+    height: 100px;
+}
+
+.input-label span{
     color: #757575;
     font-size: 18px;
     font-weight: 400;
@@ -136,7 +164,6 @@ span {
 
 .hero {
     height: 100vh;
-    background: #070514;
     background: linear-gradient(0deg,rgba(7, 5, 20, 1) 0%, rgba(15, 25, 93, 1) 30%);
 }
 
@@ -156,13 +183,13 @@ section {
     padding-bottom: 64px;
 }
 
-/* header */
+/* Header */
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: #070514;
     background: linear-gradient(180deg, rgba(7, 5, 20, 1) 0%, rgba(15, 25, 93, 0.11) 100%);
     z-index: 10;
 }
@@ -171,13 +198,7 @@ section {
     display: flex;
     flex-wrap: wrap;
 }
-.logo {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 42px;
-    text-transform: uppercase;
-    margin-right: 64px;
-}
+
 
 /* menu */ 
 
@@ -195,8 +216,8 @@ section {
     font-size: 24px;
 }
 
-.menu ul li a, .hero-cta, .logo {
-    font-size: 36px;
+.menu ul li a{
+    font-size: 24px;
     font-weight: 600;
     line-height: 42px;
     color: #ffffff;
@@ -204,7 +225,7 @@ section {
     text-transform: uppercase;
 }
 
-.menu ul li a:hover, .hero-cta:hover, .logo:hover {
+.menu ul li a:hover {
     color: #beda10;
 }
 
@@ -280,13 +301,14 @@ section {
     align-self: flex-start;
 }
 
+/* contatti */
 
 .contacts-content {
     display: flex;
     justify-content: space-between;
 }
 
-.contacts-about,
+.contacts-about, 
 .contacts-form {
     width: 40%;
     flex-grow: 0;
