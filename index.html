@@ -134,18 +134,18 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magni earum quidem nobis enim temporibus sapiente ducimus. Officia, expedita ab.</p>
             </div>
             <div class="contacts-form">
-                <form action="">
+                <form name="contact" netlify>
                     <label class="input-label" for="name">Full Name</label>
-                    <input class="input-field" type="text" placeholder="Your name here">
+                    <input class="input-field" type="text" name="fullname" placeholder="Your name here" required>
 
                     <label class="input-label" for="email">E-mail</label>
-                    <input class="input-field" type="email" placeholder="email@example.com">
+                    <input class="input-field" type="email" name="email" placeholder="email@example.com" required>
 
                     <label class="input-label" for="subject">Subject</label>
-                    <input class="input-field" type="text" placeholder="Subject of your message">
+                    <input class="input-field" type="text" name="subject" placeholder="Subject of your message" required>
 
-                    <label class="input-label" for="message">Message <span>(optional)</span></label>
-                    <textarea class="input-field" name="message" id="message" placeholder="Your message here"></textarea>
+                    <label class="input-label" for="message">Message <span>(optional max 200 characters)</span></label>
+                    <textarea class="input-field" name="message" placeholder="Your message here" maxlength="200"></textarea>
 
                     <button class="button">Send Message</button>
                 </form>
