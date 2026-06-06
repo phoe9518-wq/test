@@ -350,6 +350,7 @@ section {
 }
 
 .back-to-top {
+    background-image: url('images/arrow-up.png');
     position: fixed;
     bottom: 20px;
     right: 20px;
